@@ -93,7 +93,7 @@ paths:
       - api-gateway-auth: []
       x-amazon-apigateway-integration:
         httpMethod: "GET"
-        uri: "http://xxx.com:3030/api/v1/public/users"
+        uri: "http://api.squad2.tech:3000/api/v1/public/users"
         responses:
           default:
             statusCode: "200"
@@ -206,7 +206,7 @@ paths:
       - api-gateway-auth: []
       x-amazon-apigateway-integration:
         httpMethod: "GET"
-        uri: "http://xxx.com:3030/api/v1/public/users/{user_id}"
+        uri: "http://api.squad2.tech:3000/api/v1/public/users/{user_id}"
         responses:
           default:
             statusCode: "200"
