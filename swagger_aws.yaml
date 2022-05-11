@@ -4,7 +4,7 @@ info:
   description: "API Squad 2 BootCamp Gama Academy"
   version: "1.0.0"
   title: "api-squad2"          
-host: "s3cth09yt8.execute-api.us-east-1.amazonaws.com"
+host: "qje8wp1oc0.execute-api.us-east-1.amazonaws.com"
 basePath: "/Dev"
 tags:
 - name: "users"
@@ -267,7 +267,7 @@ securityDefinitions:
     in: "header"
     x-amazon-apigateway-authtype: "custom"
     x-amazon-apigateway-authorizer:
-      authorizerUri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:913095638699:function:sr-lambda-auth-user-api-gateway/invocations"
+      authorizerUri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:336811455630:function:sr-lambda-auth-user-api-gateway/invocations"
       authorizerResultTtlInSeconds: 0
       type: "token"
 definitions:
