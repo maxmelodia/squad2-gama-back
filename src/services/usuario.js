@@ -39,7 +39,10 @@ class UsuarioService extends Services {
             ...fields
           });
 
-          await this.changeDestino(fields.destino, usuario.id);
+          if (fields.destino) {
+            await this.changeDestino(fields.destino, usuario.id);
+          };
+          
         return {
           type:'success',
           data: usuario
@@ -66,7 +69,10 @@ class UsuarioService extends Services {
             }
           );
 
-          await this.changeDestino(fields.destino);
+          if (fields.destino) {
+            await this.changeDestino(fields.destino);
+          };
+
         return {
           type:'success',
           data: usuario
