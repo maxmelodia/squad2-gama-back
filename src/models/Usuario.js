@@ -26,11 +26,11 @@ module.exports = (sequelize, DataTypes) => {
       },
       data_nascimento: {
         type: DataTypes.DATE,
-        allowNull: false,
+        allowNull: true,
       },
       cpf: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
       },
       cidade: {
         type: DataTypes.STRING,

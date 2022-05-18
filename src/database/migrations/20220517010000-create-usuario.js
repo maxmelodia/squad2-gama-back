@@ -29,11 +29,11 @@ module.exports = {
         },
         data_nascimento: {
           type: Sequelize.DATE,
-          allowNull: false,
+          allowNull: true,
         },
         cpf: {
           type: Sequelize.STRING,
-          allowNull: false,
+          allowNull: true,
         },
         cidade: {
           type: Sequelize.STRING,
