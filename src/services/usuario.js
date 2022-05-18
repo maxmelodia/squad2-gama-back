@@ -46,6 +46,7 @@ class UsuarioService extends Services {
         };
   
     } catch(error){
+        console.log('usuario_service',error);
         return {
           type:'error',
           data: error.message
