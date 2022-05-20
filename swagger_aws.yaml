@@ -51,7 +51,7 @@ paths:
         "200":
           description: "200 response"
           schema:
-            $ref: "#/definitions/User"
+            $ref: "#/definitions/Usuario"
           headers:
             Access-Control-Allow-Origin:
               type: "string"
@@ -316,7 +316,7 @@ paths:
         "200":
           description: "200 response"
           schema:
-            $ref: "#/definitions/User"
+            $ref: "#/definitions/Usuario"
           headers:
             Access-Control-Allow-Origin:
               type: "string"
