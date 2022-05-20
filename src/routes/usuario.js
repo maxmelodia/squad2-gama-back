@@ -5,9 +5,9 @@ const route = Router();
 
 route
 .get("/usuario", Controller.Usuario.findAll)
-.get("/usuario/:usuario_id", Controller.Usuario.findbyId)
+.get("/usuario/:sub", Controller.Usuario.findbyId)
 .post("/usuario", Controller.Usuario.store)
 .put("/usuario", Controller.Usuario.edit)
-.delete("/usuario/:usuario_id", Controller.Usuario.destroy);
+.delete("/usuario/:sub", Controller.Usuario.destroy);
 
 module.exports = route;

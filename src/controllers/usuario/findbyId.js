@@ -4,12 +4,12 @@ const HttpResponse = require('../../config/helpers/http-response');
 module.exports = {
   async findbyId(req, res) {
     try{
-          const { usuario_id } = req.params;
+          const { sub } = req.params;
           const usuarioService = new UsuarioService('Usuario', null);
 
           const params = {
             where: {
-              id: usuario_id
+              sub
             }
           }
 
