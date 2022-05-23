@@ -9,7 +9,7 @@ class UsuarioService extends Services {
 
   fields (action) {
       const body = new Object();
-      const { id, sub, nome, email, data_nascimento, cpf, cidade, pais_id, foto, telefone, descricao, usuario, destino } = this.req.body;
+      const { id, sub, nome, email, data_nascimento, cpf, cidade, pais_id, foto, telefone, descricao, usuario, destino, preferencias } = this.req.body;
 
       if (action === 'edit') {
         body.id = id;          
@@ -30,6 +30,7 @@ class UsuarioService extends Services {
       body.descricao = descricao;
 
       body.destino = destino;      
+      body.preferencias = preferencias;
       return body;
   }
 
@@ -40,10 +41,6 @@ class UsuarioService extends Services {
             ...fields
           });
 
-          if (fields.destino) {
-            await this.changeDestino(fields.destino, usuario.id);
-          };
-          
         return {
           type:'success',
           data: usuario
@@ -73,6 +70,8 @@ class UsuarioService extends Services {
           if (fields.destino) {
             await this.changeDestino(fields.destino, fields.id);
           };
+
+          await this.chancePreferencias(fields.preferencias, fields.id)
 
         return {
           type:'success',
@@ -106,6 +105,21 @@ class UsuarioService extends Services {
       };  
     };
   } 
+
+  async chancePreferencias(preferencias, usuario_id) {
+    await db.UsuarioPreferencia.destroy({
+      where: { 
+        usuario_id
+      }       
+    });
+
+    for (const d of preferencias) {
+        await db.UsuarioPreferencia.create({
+          usuario_id,
+          preferencia_id: d.id
+        });
+    };
+  }   
 
 }
 
