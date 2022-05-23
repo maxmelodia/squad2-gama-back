@@ -28,6 +28,7 @@ class UsuarioService extends Services {
       body.foto = foto;
       body.telefone = telefone;
       body.descricao = descricao;
+
       body.destino = destino;      
       return body;
   }
@@ -49,7 +50,6 @@ class UsuarioService extends Services {
         };
   
     } catch(error){
-        console.log('usuario_service',error);
         return {
           type:'error',
           data: error.message
@@ -60,6 +60,7 @@ class UsuarioService extends Services {
   async edit(){
     try{      
           const fields = this.fields('edit');
+         
           const usuario = await db.Usuario.update({
                 ...fields
             },
@@ -70,7 +71,7 @@ class UsuarioService extends Services {
           );
 
           if (fields.destino) {
-            await this.changeDestino(fields.destino);
+            await this.changeDestino(fields.destino, fields.id);
           };
 
         return {
@@ -89,7 +90,6 @@ class UsuarioService extends Services {
 
   async changeDestino(destino, usuario_id) {
     for (const d of destino) {
-      console.log(destino);
       if (d.id) {
         await db.Destino.update({
           ...d
