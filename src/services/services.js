@@ -26,6 +26,7 @@ class Services {
       limit: conditions.limit,
       offset: conditions.getOffSet()
     }
+
     const {count, rows} = await database[this.nomeDoModelo].findAndCountAll({ 
       ...conditions.options,
       ...paginacao,
