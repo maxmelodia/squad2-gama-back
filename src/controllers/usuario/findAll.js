@@ -16,7 +16,8 @@ module.exports = {
                 model: db.Preferencia,
                 as: 'preferencias',
                 through: { attributes: [] },
-              },               
+              },    
+              { model: db.Conexao, as: "conexoes_recebidas"},
             ]
           }
           

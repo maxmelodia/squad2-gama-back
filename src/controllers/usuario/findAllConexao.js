@@ -14,7 +14,7 @@ module.exports = {
               },
               { model: db.Usuario, as: "usuario_publicou",
                 attributes: ['id', 'sub', 'usuario', 'nome', 'email', 'data_nascimento', 'cpf', 'cidade', 'telefone', 'descricao']
-            },
+              },
             ]
           }
           
