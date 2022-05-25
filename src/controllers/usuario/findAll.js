@@ -11,7 +11,12 @@ module.exports = {
             include: [
               { model: db.Destino, as: "destino",
                 attributes: ['id','usuario_id','descricao','data_partida','data_retorno','cidade','pais_id','latitude','longitude']
-              }
+              },
+              {
+                model: db.Preferencia,
+                as: 'preferencias',
+                through: { attributes: [] },
+              },               
             ]
           }
           

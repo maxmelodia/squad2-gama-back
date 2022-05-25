@@ -8,6 +8,8 @@ route
 .get("/usuario/:sub", Controller.Usuario.findbyId)
 .post("/usuario", Controller.Usuario.store)
 .put("/usuario", Controller.Usuario.edit)
-.delete("/usuario/:sub", Controller.Usuario.destroy);
+.delete("/usuario/:sub", Controller.Usuario.destroy)
+
+.get("/usuario/:sub/conexoes", Controller.Usuario.findAllConexao)
 
 module.exports = route;

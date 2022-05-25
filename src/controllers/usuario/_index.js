@@ -4,10 +4,13 @@
  const { edit } = require('./edit')
  const { destroy } = require('./destroy')
 
+ const { findAllConexao } = require('./findAllConexao');
+
 module.exports = {
    findAll,
    findbyId,
    store,  
    edit,
-   destroy
+   destroy,
+   findAllConexao
 }
