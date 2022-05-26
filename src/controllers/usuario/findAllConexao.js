@@ -10,10 +10,10 @@ module.exports = {
           const includes = {
             include: [
               { model: db.Usuario, as: "usuario_conectou",
-                attributes: ['id', 'sub', 'usuario', 'nome', 'email', 'data_nascimento', 'cpf', 'cidade', 'telefone', 'descricao']
+                attributes: ['id', 'sub', 'usuario', 'nome', 'email', 'data_nascimento', 'cpf', 'cidade', 'telefone', 'descricao','foto']
               },
               { model: db.Usuario, as: "usuario_publicou",
-                attributes: ['id', 'sub', 'usuario', 'nome', 'email', 'data_nascimento', 'cpf', 'cidade', 'telefone', 'descricao']
+                attributes: ['id', 'sub', 'usuario', 'nome', 'email', 'data_nascimento', 'cpf', 'cidade', 'telefone', 'descricao', 'foto']
               },
             ]
           }
