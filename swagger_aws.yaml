@@ -1273,7 +1273,11 @@ definitions:
       descricao:
         type: "string"            
       situacao:
-        type: "string"            
+        type: "string"  
+  Planejamentos:     
+      type: "array"   
+      items:
+        $ref: '#/definitions/Planejamento'
       
 x-amazon-apigateway-gateway-responses:
   DEFAULT_4XX:
