@@ -1,5 +1,4 @@
 const db = require('../../models');
-const sequelize = require('sequelize');
 const ConexaoService = require('../../services/conexao');
 const HttpResponse = require('../../config/helpers/http-response');
 
@@ -10,9 +9,6 @@ module.exports = {
           const conexaoService = new ConexaoService('Conexao', req);
 
           const params = {
-            // where: {
-            //   sub: sequelize.col("usuario_publicou.sub")
-            // },
             include: [
               { model: db.Usuario, as: "usuario_conectou",
                 attributes: ['id', 'sub', 'usuario', 'nome', 'email', 'data_nascimento', 'cpf', 'cidade', 'telefone', 'descricao','foto'],

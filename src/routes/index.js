@@ -1,6 +1,7 @@
 const usuario = require("./usuario");
 const preferencia = require("./preferencia");
 const conexao = require("./conexao");
+const planejamento = require("./planejamento");
 
 const url = "/api/v1/public";
 module.exports = (app) => {
@@ -8,6 +9,7 @@ module.exports = (app) => {
     url,
     usuario,
     preferencia,
-    conexao
+    conexao,
+    planejamento
   );
 };

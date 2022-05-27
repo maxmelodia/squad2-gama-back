@@ -11,5 +11,6 @@ route
 .delete("/usuario/:sub", Controller.Usuario.destroy)
 
 .get("/usuario/:sub/conexoes", Controller.Usuario.findAllConexao)
+.get("/usuario/:sub/planejamentos", Controller.Usuario.findAllPlanejamento)
 
 module.exports = route;
