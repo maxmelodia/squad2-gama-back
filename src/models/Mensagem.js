@@ -20,7 +20,7 @@ module.exports = (sequelize, DataTypes) => {
           allowNull: false,
           references: { model: "usuario", key: "id" },
         },
-        dataHora: {
+        data_hora: {
           type: DataTypes.DATE,
           allowNull: false,
         },

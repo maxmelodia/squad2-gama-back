@@ -8,5 +8,7 @@ route
 .put("/planejamento", Controller.Planejamento.edit)
 .delete("/planejamento/:planejamento_id", Controller.Planejamento.destroy)
 
-module.exports = route;
+.get("/planejamento/:planejamento_id/mensagens", Controller.Planejamento.findAllMensagens)
+.post("/planejamento/:planejamento_id/mensagem", Controller.Planejamento.storeMensagem)
 
+module.exports = route;

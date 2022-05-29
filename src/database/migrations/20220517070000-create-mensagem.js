@@ -23,7 +23,7 @@ module.exports = {
           allowNull: false,
           references: { model: "usuario", key: "id" },
         },
-        dataHora: {
+        data_hora: {
           type: Sequelize.DATE,
           allowNull: false,
         },
