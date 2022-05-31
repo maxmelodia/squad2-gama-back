@@ -9,6 +9,7 @@ module.exports = {
           const conexaoService = new ConexaoService('Conexao', req);
 
           const params = {
+            order: [ [ 'id', 'DESC' ] ],
             include: [
               { model: db.Usuario, as: "usuario_conectou",
                 attributes: ['id', 'sub', 'usuario', 'nome', 'email', 'data_nascimento', 'cpf', 'cidade', 'telefone', 'descricao','foto'],

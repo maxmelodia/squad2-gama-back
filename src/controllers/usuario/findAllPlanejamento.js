@@ -14,6 +14,7 @@ module.exports = {
 
           const planejamentoService = new PlanejamentoService('Planejamento', req);
           const params = {
+            order: [ [ 'id', 'DESC' ] ],
             include: [
               { model: db.Conexao, as: "conexao",
                 where: {
