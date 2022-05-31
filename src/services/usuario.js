@@ -9,10 +9,13 @@ class UsuarioService extends Services {
 
   fields (action) {
       const body = new Object();
+      const aux = new Object();
+      
       const { id, sub, nome, email, data_nascimento, cpf, cidade, pais_id, foto, telefone, descricao, usuario, destino, preferencias } = this.req.body;
 
+
       if (action === 'edit') {
-        body.id = id;          
+        aux.id = id;          
       };
       if (action === 'create') {
         body.usuario = usuario;
@@ -31,14 +34,20 @@ class UsuarioService extends Services {
 
       body.destino = destino;      
       body.preferencias = preferencias;
-      return body;
+
+      const ret = {
+        body,
+        aux
+      };      
+
+      return ret;
   }
 
   async create(){
     try{      
           const fields = this.fields('create');
           const usuario = await db.Usuario.create({
-            ...fields
+            ...fields.body
           });
 
         return {
@@ -59,19 +68,19 @@ class UsuarioService extends Services {
           const fields = this.fields('edit');
          
           const usuario = await db.Usuario.update({
-                ...fields
+                ...fields.body
             },
             { where: { 
-              id: fields.id 
+              id: fields.aux.id 
               } 
             }
           );
 
           if (fields.destino) {
-            await this.changeDestino(fields.destino, fields.id);
+            await this.changeDestino(fields.body.destino, fields.aux.id);
           };
 
-          await this.chancePreferencias(fields.preferencias, fields.id)
+          await this.chancePreferencias(fields.body.preferencias, fields.aux.id);
 
         return {
           type:'success',
