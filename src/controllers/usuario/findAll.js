@@ -9,6 +9,7 @@ module.exports = {
 
           const includes = {
             include: [
+              { model: db.Avaliacao, as: 'avaliacao'},    
               { model: db.Destino, as: "destino",
                 attributes: ['id','usuario_id','descricao','data_partida','data_retorno','cidade','pais_id','latitude','longitude']
               },

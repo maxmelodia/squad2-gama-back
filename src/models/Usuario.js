@@ -83,6 +83,10 @@ module.exports = (sequelize, DataTypes) => {
       as: "conexoes_recebidas",
     });
 
+    Usuario.hasMany(models.Avaliacao, {
+      foreignKey: "usuario_id",
+      as: "avaliacao",
+    });
 
   };    
 

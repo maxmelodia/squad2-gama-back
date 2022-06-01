@@ -11,4 +11,7 @@ route
 .get("/planejamento/:planejamento_id/mensagens", Controller.Planejamento.findAllMensagens)
 .post("/planejamento/:planejamento_id/mensagem", Controller.Planejamento.storeMensagem)
 
+.post("/planejamento/:planejamento_id/avaliacao", Controller.Planejamento.storeAvaliacao)
+
+
 module.exports = route;

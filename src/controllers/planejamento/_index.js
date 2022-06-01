@@ -3,6 +3,7 @@ const { edit } = require('./edit')
 const { destroy } = require('./destroy')
 const { findAllMensagens } = require('./findAllMensagens')
 const { storeMensagem } = require('./storeMensagem')
+const { storeAvaliacao } = require('./storeAvaliacao')
 
 
 module.exports = {
@@ -10,5 +11,6 @@ module.exports = {
    edit,
    destroy,
    findAllMensagens,
-   storeMensagem
+   storeMensagem,
+   storeAvaliacao
 }

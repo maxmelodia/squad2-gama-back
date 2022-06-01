@@ -16,6 +16,7 @@ module.exports = {
           const params = {
             order: [ [ 'id', 'DESC' ] ],
             include: [
+              { model: db.Avaliacao, as: 'avaliacao'},
               { model: db.Conexao, as: "conexao",
                 where: {
                   [Op.or]: [{usuario_publicou_id: usuario_id}, {usuario_conectou_id: usuario_id}]
