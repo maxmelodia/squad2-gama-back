@@ -34,7 +34,7 @@ class PlanejamentoService extends Services {
   
   async edit(){
     try{      
-        const { id, cidade, descricao, situacao } = this.req.body;
+        const { id, cidade, descricao, situacao, conexao_id } = this.req.body;
             
         const planejamento = await db.Planejamento.update({
           cidade, 
@@ -46,6 +46,16 @@ class PlanejamentoService extends Services {
           } 
         }        
         );
+
+        if (situacao === 'Finalizado') {
+          await db.Conexao.update({
+            status: 'Finalizado'
+          },{
+            where: {
+              id: conexao_id
+            }
+          });
+        };
 
         return {
           type:'success',

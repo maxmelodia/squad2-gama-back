@@ -28,7 +28,7 @@ module.exports = {
           allowNull: false,
         },
         nota: {
-          type: Sequelize.INTEGER,
+          type: Sequelize.REAL,
           allowNull: false,
         },
         mensagem: {

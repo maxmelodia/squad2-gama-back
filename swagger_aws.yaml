@@ -1669,7 +1669,7 @@ definitions:
       data_hora:
         type: "string"
       nota:
-        type: "string"          
+        type: "number"          
       mensagem:
         type: "string"          
       

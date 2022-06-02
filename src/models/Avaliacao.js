@@ -25,7 +25,7 @@ module.exports = (sequelize, DataTypes) => {
           allowNull: false,
         },
         nota: {
-          type: DataTypes.INTEGER,
+          type: DataTypes.REAL,
           allowNull: false,
         },
         mensagem: {
