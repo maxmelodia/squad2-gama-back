@@ -22,7 +22,7 @@
 ## 💻 Arquitetura do Projeto
 
 <p align="center">
-  <a href="https://veller.squad2.tech/" rel="noopener" target="_blank"><img width="150" src=".github/arch.png" alt="Arquitetura do projeto"></a>
+  <img width="400" src=".github/arch.png" alt="Arquitetura do projeto"/>
 </p>
 
 ## 🧪 Tecnologias
