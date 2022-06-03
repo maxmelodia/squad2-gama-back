@@ -26,6 +26,10 @@
   <img width="600" src=".github/arch.png" alt="Arquitetura do projeto"/>
 </p>
 
+## 🎫 Swagger do Projeto
+- [Veller Swagger](http://api.squad2.tech:3000/api-docs/)
+
+
 ## 🧪 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
@@ -35,6 +39,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [JavaScript](https://www.javascript.com/)
 - [Sequelize](https://sequelize.org/)
 - [Swagger](https://swagger.io/)
+- [AWS](https://vercel.com)
 
 
 ## 🚀 Como executar
@@ -66,7 +71,11 @@ O app estará disponível no seu browser pelo endereço http://localhost:3000.
 
 Colaboradores: 
 
-[<img loading="lazy" alt="maxmelodia" src="https://github.com/maxmelodia.png?size=70" width="35" height="35">](https://github.com/maxmelodia) [<img loading="lazy" alt="estmaira" src="https://github.com/estmaira.png?size=70" width="35" height="35">](https://github.com/estmaira)
+[<img loading="lazy" alt="maxmelodia" src="https://github.com/maxmelodia.png?size=70" width="40" height="40">](https://github.com/maxmelodia) [![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/maxmelodia)](https://github.com/maxmelodia) [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/maxwell-roberto/)](https://www.linkedin.com/in/maxwell-roberto/)
+
+[<img loading="lazy" alt="estmaira" src="https://github.com/estmaira.png?size=70" width="40" height="40">](https://github.com/estmaira) [![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/estmaira)](https://github.com/estmaira) [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/ester-maira/)](https://www.linkedin.com/in/ester-maira/)
+
+<br>
 
 
 ## 📝 License
