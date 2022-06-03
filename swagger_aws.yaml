@@ -43,6 +43,14 @@ paths:
         in: "query"
         required: false
         type: "string"
+      - name: "searchDestino"
+        in: "query"
+        required: false
+        type: "string"
+      - name: "searchPref"
+        in: "query"
+        required: false
+        type: "string"
       - name: "lookup"
         in: "query"
         required: false
@@ -110,6 +118,8 @@ paths:
           integration.request.querystring.page: "method.request.querystring.page"
           integration.request.querystring.limit: "method.request.querystring.limit"
           integration.request.querystring.search: "method.request.querystring.search"
+          integration.request.querystring.searchDestino: "method.request.querystring.searchDestino"
+          integration.request.querystring.searchPref: "method.request.querystring.searchPref"          
           integration.request.querystring.lookup: "method.request.querystring.lookup"
           integration.request.header.Authorization: "method.request.header.Authorization"
           integration.request.querystring.orderBy: "method.request.querystring.orderBy"

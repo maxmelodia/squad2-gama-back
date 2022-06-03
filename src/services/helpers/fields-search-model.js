@@ -2,7 +2,7 @@ const { Op } = require('sequelize');
 const sequelize = require('sequelize');
 
 const listSearch = {
-  Usuario:'id,sub,nome,email',
+  Usuario:'nome,email,cidade',
 }
 
 function fieldsModel(model, search){
@@ -19,7 +19,7 @@ function fieldsModel(model, search){
           }
        )
       } else {
-        fields[data] = { [Op.like]: '%' + search + '%' };
+        fields[data] = { [Op.iLike]: '%' + search + '%' };
       }
 
       return fields;

@@ -75,8 +75,8 @@ class UsuarioService extends Services {
               } 
             }
           );
-
-          if (fields.destino) {
+          
+          if (fields.body.destino) {
             await this.changeDestino(fields.body.destino, fields.aux.id);
           };
 
@@ -97,21 +97,17 @@ class UsuarioService extends Services {
   }
 
   async changeDestino(destino, usuario_id) {
+    await db.Destino.destroy({
+      where: {
+        usuario_id
+      }
+    });    
+
     for (const d of destino) {
-      if (d.id) {
-        await db.Destino.update({
-          ...d
-        },
-        { where: { 
-          id: d.id
-          } 
-        });
-      } else {
-        await db.Destino.create({
-          usuario_id,
-          ...d
-        });
-      };  
+      await db.Destino.create({
+        usuario_id,
+        ...d
+      });
     };
   } 
 
