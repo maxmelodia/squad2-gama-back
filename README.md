@@ -1,4 +1,6 @@
 <!-- markdownlint-disable-next-line -->
+## Versão Back-end
+
 <p align="center">
   <a href="https://veller.squad2.tech/" rel="noopener" target="_blank"><img width="250" src=".github/logo.png" alt="Veller logo"></a>
 </p>
@@ -16,6 +18,7 @@
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/mui/material-ui/blob/HEAD/LICENSE)
 
 <br/>
+
 
 ## 💻 Arquitetura do Projeto
 
@@ -54,14 +57,9 @@ $ npm start
 
 O app estará disponível no seu browser pelo endereço http://localhost:3000.
 
-## 📝 License
-
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
-
 ## 💎 Patrocinador 
-
 <p align="center">
-  <a href="https://www.gama.academy/" rel="noopener sponsored" target="_blank"><img height="128" width="400" src="https://assets.website-files.com/5ff79f3ebebf6b12f6b7747f/5ffe04fc6284b7e90070d985_logo-gama-academy.png" alt="octopus" title="Repeatable, reliable deployments" loading="lazy" /></a>
+  <a href="https://www.gama.academy/" rel="noopener sponsored" target="_blank"><img height="70" width="250" src="https://assets.website-files.com/5ff79f3ebebf6b12f6b7747f/5ffe04fc6284b7e90070d985_logo-gama-academy.png" alt="octopus" title="Repeatable, reliable deployments" loading="lazy" /></a>
 </p>
 
 ---
@@ -69,6 +67,11 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 Colaboradores: 
 
 [<img loading="lazy" alt="maxmelodia" src="https://github.com/maxmelodia.png?size=70" width="35" height="35">](https://github.com/maxmelodia) [<img loading="lazy" alt="estmaira" src="https://github.com/estmaira.png?size=70" width="35" height="35">](https://github.com/estmaira)
+
+
+## 📝 License
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
 ---
 
