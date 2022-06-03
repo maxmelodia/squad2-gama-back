@@ -1,6 +1,6 @@
 <!-- markdownlint-disable-next-line -->
 <p align="center">
-  <a href="https://veller.squad2.tech/" rel="noopener" target="_blank"><img width="150" src=".github/logo.png" alt="Veller logo"></a>
+  <a href="https://veller.squad2.tech/" rel="noopener" target="_blank"><img width="400" src=".github/logo.png" alt="Veller logo"></a>
 </p>
 
 <h3 align="center">Nunca mais deixe de viajar por não ter companhia</h1>
@@ -15,14 +15,12 @@
 
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/mui/material-ui/blob/HEAD/LICENSE)
 
-<div align="center">
-
 <br/>
 
 ## 💻 Arquitetura do Projeto
 
 <p align="center">
-  <img width="400" src=".github/arch.png" alt="Arquitetura do projeto"/>
+  <img width="600" src=".github/arch.png" alt="Arquitetura do projeto"/>
 </p>
 
 ## 🧪 Tecnologias
