@@ -8,7 +8,7 @@ module.exports = {
     try {
           const usuarioService = new UsuarioService('Usuario', req);
 
-          const { searchDestino, searchPref } = req.query;
+          const { searchDestino = '', searchPref = '' } = req.query;
 
           const includes = {
             include: [
