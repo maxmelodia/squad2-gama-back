@@ -1,6 +1,6 @@
 <!-- markdownlint-disable-next-line -->
 <p align="center">
-  <a href="https://veller.squad2.tech/" rel="noopener" target="_blank"><img width="400" src=".github/logo.png" alt="Veller logo"></a>
+  <a href="https://veller.squad2.tech/" rel="noopener" target="_blank"><img width="250" src=".github/logo.png" alt="Veller logo"></a>
 </p>
 
 <h3 align="center">Nunca mais deixe de viajar por não ter companhia</h1>
@@ -65,9 +65,11 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 </p>
 
 ---
+
 Colaboradores: 
 
 [<img loading="lazy" alt="maxmelodia" src="https://github.com/maxmelodia.png?size=70" width="35" height="35">](https://github.com/maxmelodia) [<img loading="lazy" alt="estmaira" src="https://github.com/estmaira.png?size=70" width="35" height="35">](https://github.com/estmaira)
 
 ---
+
 Feito com :orange_heart: by Veller 👋🏻 [Siga Veller](https://veller.squad2.com.br/)
